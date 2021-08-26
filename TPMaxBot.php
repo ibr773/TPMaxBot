@@ -1,6 +1,6 @@
 <?php
 ob_start();
-$API_KEY = 'توكن';
+$API_KEY = '1987658736:AAGXzzb_QpXnyhRF6josWNpGmHX0jTIIO00';
 define('API_KEY',$API_KEY);
 function KasperTP($method,$datas=[]){
 $url = "https://api.telegram.org/bot".API_KEY."/".$method;
@@ -19,9 +19,9 @@ return json_decode($res);
 مشكول الذمة كلمن يغير القناة :)
 معرف القناة 👇
 */
-echo " team ~ tp";
-$ch = "dev_kasper";
-$setbot = "kasper_dev";
+echo "i";
+$ch = "Mop_77";
+$setbot = "Mop_77";
 if(!file_exists("settings.json")){
 file_put_contents("settings.json", "{\"groups\":[]}");
 }
@@ -96,8 +96,8 @@ if(!in_array($chat_id, $groups) and $update->message->chat->type == "supergroup"
 file_put_contents("users.php", '$groups[]= "' . $chat_id . '"'.";\n", FILE_APPEND);
 }
 //حصانة الادمنيه
-$sudo = "219844437";
-$id_bot = "403181608"; 
+$sudo = "1875560714";
+$id_bot = "1987658736"; 
 $info = json_decode(file_get_contents("https://api.telegram.org/bot".$API_KEY."/getChatMember?chat_id=$chat_id&user_id=".$from_id), true);
 $group = $info['result']['status'];
 $admin = "administrator";
